@@ -38,8 +38,8 @@ export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.6.12.0/libexec"
 export EC2_URL="https://ec2.ap-southeast-2.amazonaws.com"
 
 # Golang variables
-export GOPATH="~/Development/Private/go"
+export GOPATH="$HOME/Development/Private/go"
 export GOROOT="$(brew --prefix go)/libexec"
 
 # Idempotent path variable with Homebrew and Go executables preceding the rest 
-export PATH="/usr/local/bin:$GOROOT/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="/usr/local/bin:$GOROOT/bin:$GOPATH/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"

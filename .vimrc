@@ -14,8 +14,10 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'tfnico/vim-gradle'
 Plugin 'bling/vim-airline'
-
 Plugin 'majutsushi/tagbar'
+Plugin 'ervandew/supertab'
+Plugin 'Townk/vim-autoclose'
+Plugin 'maxbrunsfeld/vim-yankstack'
 
 call vundle#end()
 filetype plugin indent on 
@@ -43,11 +45,19 @@ let mapleader=";"
 
 " NERDTree configuration and key mappings
 map <C-n> :NERDTreeToggle<cr>
-map <leader>nt :NERDTreeToggle<cr>
 map <leader>nf :NERDTreeFind<cr>
 " Allow quit command to exit Vim if the NERDTree window is the last open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 let NERDTreeShowHidden=1
+
+" Supertab configuration
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabClosePreviewOnPopupClose = 1
+
+" Yankstack configuration
+let g:yankstack_map_keys = 0
+nmap <leader>p <Plug>yankstack_substitute_older_paste
+nmap <leader>P <Plug>yankstack_substitute_newer_paste
 
 " Go development key mappings
 au FileType go nmap <Leader>i <Plug>(go-info)
