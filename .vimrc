@@ -30,6 +30,7 @@ set background=dark
 " Other codey settings
 syntax on
 set number
+set ts=4
 
 " Map F5 to switch between Solarized light and dark modes
 call togglebg#map("<F5>")
