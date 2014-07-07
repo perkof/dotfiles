@@ -25,3 +25,5 @@ for file in ~/.{exports,aliases,functions,extra}; do
 done;
 unset file;
 
+# Modify the terminal's default ANSI colors for the Base16 Tomorrow Dark theme.
+. ~/bin/base16-tomorrow.dark.sh

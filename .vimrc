@@ -11,7 +11,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'fatih/vim-go'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'chriskempson/base16-vim'
 Plugin 'tfnico/vim-gradle'
 Plugin 'bling/vim-airline'
 Plugin 'majutsushi/tagbar'
@@ -22,14 +22,10 @@ Plugin 'maxbrunsfeld/vim-yankstack'
 call vundle#end()
 filetype plugin indent on 
 
-" Use the Solarized color scheme - dark for terminal, light for GUI
-colorscheme solarized
-if has('gui_running')
-  set background=light
-  set guifont=Consolas:h12
-else
-  set background=dark
-endif
+" Set up the Base16 Tomorrow Dark theme
+let base16colorspace=256
+colorscheme base16-tomorrow
+set background=dark
 
 " Other codey settings
 syntax on
