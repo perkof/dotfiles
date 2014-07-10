@@ -1,5 +1,17 @@
 # MacVim function
-mvim() { open -a /Applications/MacVim.app "$@" }
+function mvim() {
+	open -a /Applications/MacVim.app "$@";
+}
+
+# Capture any dot file changes in the dot files repo
+function capture_dots() {
+	for file in ~/.{aliases,curlrc,editorconfig,exports,functions,gitconfig,screenrc}; do
+		[ -r "$file" ] && [ -f "$file" ] && cp "$file" $DOTFILES_HOME;
+	done;
+	for file in ~/bin/*; do
+		[ -r "$file" ] && [ -f "$file" ] && cp "$file" $DOTFILES_HOME/bin;
+	done;
+}
 
 # Simple calculator
 function calc() {

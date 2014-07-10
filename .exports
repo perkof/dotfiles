@@ -28,6 +28,9 @@ export GROOVY_HOME="$(brew --prefix groovy)/libexec"
 # Gradle home directory
 export GRADLE_HOME="$(brew --prefix gradle)/libexec"
 
+# Dot files repository home directory
+export DOTFILES_HOME="$HOME/Development/Private/dotfiles"
+
 # Docker remote host (docker.host needs to defined in /etc/hosts)
 export DOCKER_HOST="tcp://docker.host:4243"
 
@@ -42,4 +45,4 @@ export GOPATH="$HOME/Development/Private/go"
 export GOROOT="$(brew --prefix go)/libexec"
 
 # Idempotent path variable with Homebrew and Go executables preceding the rest 
-export PATH="/usr/local/bin:$GOROOT/bin:$GOPATH/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="/usr/local/bin:$GOROOT/bin:$GOPATH/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$HOME/bin"
