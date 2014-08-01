@@ -96,9 +96,8 @@ alias ldapvi_co_staging='EDITOR=vim ldapvi --discover --host ldap://localhost:16
 alias ldapvi_co_dev='EDITOR=vim ldapvi --discover --host ldap://localhost:26070 --user cn=manager,dc=puppet,dc=com --password coldappassword'
 alias ldapvi_co_staging_dev1b="ldapvi_co_staging '(cn=melcclstk02*)'"
 
-# Aliases to start and stop Cassandra
-alias start_cassandra="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.cassandra.plist"
-alias stop_cassandra="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.cassandra.plist"
-
 # Use MacVim's vim binary
 alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+
+# Terraform
+alias tf="terraform"
