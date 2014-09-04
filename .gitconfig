@@ -150,3 +150,7 @@
 	email = ashlin.eldridge@auspost.com.au
 [credential]
 	helper = osxkeychain
+[pull]
+	rebase = true
+[branch]
+	autosetuprebase = always
