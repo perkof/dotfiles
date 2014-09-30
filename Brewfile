@@ -29,6 +29,9 @@ install wget --enable-iri
 install ringojs
 install narwhal
 
+# Install MacVim with LUA support
+brew install macvim --with-cscope --with-lua --override-system-vim
+
 # Install more recent versions of some OS X tools
 install vim --override-system-vi
 install homebrew/dupes/grep
