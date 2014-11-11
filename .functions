@@ -5,7 +5,7 @@ function mvim() {
 
 # Capture any dot file changes in the dot files repo
 function capture_dots() {
-	for file in ~/.{aliases,curlrc,editorconfig,exports,functions,gitconfig,screenrc,zshrc}; do
+	for file in ~/.{aliases,curlrc,editorconfig,exports,functions,gitconfig,screenrc,vimrc,zshrc}; do
 		[ -r "$file" ] && [ -f "$file" ] && cp "$file" $DOTFILES_HOME;
 	done;
 	for file in ~/bin/*; do

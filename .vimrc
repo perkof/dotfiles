@@ -18,6 +18,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'ervandew/supertab'
 Plugin 'Townk/vim-autoclose'
 Plugin 'maxbrunsfeld/vim-yankstack'
+Plugin 'chase/vim-ansible-yaml'
 
 call vundle#end()
 filetype plugin indent on 
@@ -32,6 +33,9 @@ syntax on
 set number
 set ts=4
 
+" Search settings
+set incsearch hlsearch
+
 " Map F5 to switch between Solarized light and dark modes
 call togglebg#map("<F5>")
 " Map F6 to toggle Tagbar
@@ -45,7 +49,7 @@ map <C-n> :NERDTreeToggle<cr>
 map <leader>nf :NERDTreeFind<cr>
 " Allow quit command to exit Vim if the NERDTree window is the last open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-let NERDTreeShowHidden=1
+"let NERDTreeShowHidden=1
 
 " Supertab configuration
 let g:SuperTabDefaultCompletionType = "context"
