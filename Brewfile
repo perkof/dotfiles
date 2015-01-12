@@ -14,11 +14,9 @@ install coreutils
 install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
 install findutils
-# Install GNU `sed`, overwriting the built-in `sed`
-install gnu-sed --default-names
 
 # Install wget with IRI support
-install wget --enable-iri
+install wget --with-iri
 
 # Install MacVim with LUA support
 install macvim --with-cscope --with-lua --override-system-vim
@@ -27,6 +25,10 @@ install macvim --with-cscope --with-lua --override-system-vim
 install git
 install tree
 install jq
+
+# Install development languages and tooling
+install gradle
+install groovy
 
 # Remove outdated versions from the cellar
 cleanup

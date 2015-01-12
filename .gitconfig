@@ -147,7 +147,7 @@
 	insteadOf = "gist:"
 [user]
 	name = Ashlin Eldridge
-	email = ashlin.eldridge@auspost.com.au
+	email = ashlin.eldridge@gmail.com
 [credential]
 	helper = osxkeychain
 [pull]

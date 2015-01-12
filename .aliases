@@ -6,9 +6,9 @@ alias .....="cd ../../../.."
 
 # Shortcuts
 alias dev="cd ~/Development"
-alias devp="cd ~/Development/Private"
-alias devw="cd ~/Development/Work"
-alias gome="cd $GOPATH/src/github.com/ashlineldridge"
+alias devh="cd ~/Development/home"
+alias devw="cd ~/Development/work"
+alias devg="cd $GOPATH/src/github.com/ashlineldridge"
 alias g="git"
 alias h="history"
 alias j="jobs"
@@ -96,8 +96,8 @@ alias ldapvi_co_staging='EDITOR=vim ldapvi --discover --host ldap://localhost:16
 alias ldapvi_co_dev='EDITOR=vim ldapvi --discover --host ldap://localhost:26070 --user cn=manager,dc=puppet,dc=com --password coldappassword'
 alias ldapvi_co_staging_dev1b="ldapvi_co_staging '(cn=melcclstk02*)'"
 
-# Use MacVim's vim binary
-alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+# Use MacVim's vim binary (already done?)
+#alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 
 # Terraform
 alias tf="terraform"

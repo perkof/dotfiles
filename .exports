@@ -18,9 +18,6 @@ export LESS_TERMCAP_md="${yellow}";
 # Always enable colored `grep` output
 export GREP_OPTIONS="--color=auto";
 
-# Link Homebrew casks in `/Applications` rather than `~/Applications`
-export HOMEBREW_CASK_OPTS="--appdir=/Applications";
-
 # Java and Groovy home directories
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export GROOVY_HOME="$(brew --prefix groovy)/libexec"
@@ -29,19 +26,19 @@ export GROOVY_HOME="$(brew --prefix groovy)/libexec"
 export GRADLE_HOME="$(brew --prefix gradle)/libexec"
 
 # Dot files repository home directory
-export DOTFILES_HOME="$HOME/Development/Private/dotfiles"
+export DOTFILES_HOME="$HOME/Development/home/dotfiles"
 
 # Docker remote host (docker.host needs to defined in /etc/hosts)
 export DOCKER_HOST="tcp://docker.host:4243"
 
 # AWS CLI tools variables
-export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
-export EC2_CERT="$(/bin/ls "$HOME"/.ec2/cert-*.pem | /usr/bin/head -1)"
-export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.6.12.0/libexec"
-export EC2_URL="https://ec2.ap-southeast-2.amazonaws.com"
+#export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
+#export EC2_CERT="$(/bin/ls "$HOME"/.ec2/cert-*.pem | /usr/bin/head -1)"
+#export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.6.12.0/libexec"
+#export EC2_URL="https://ec2.ap-southeast-2.amazonaws.com"
 
 # Golang variables
-export GOPATH="$HOME/Development/Private/go"
+export GOPATH="$HOME/Development/home/go"
 export GOROOT="$(brew --prefix go)/libexec"
 
 # Idempotent path variable with Homebrew and Go executables preceding the rest 
