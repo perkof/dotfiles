@@ -24,7 +24,3 @@ unset file;
 
 # Modify the terminal's default ANSI colors for the Base16 Tomorrow Dark theme.
 . ~/bin/base16-tomorrow.dark.sh
-
-# Add Google Cloud SDK tools to the path and enable completion.
-. ~/Development/Tools/google-cloud-sdk/path.zsh.inc
-. ~/Development/Tools/google-cloud-sdk/completion.zsh.inc
