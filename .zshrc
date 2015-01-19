@@ -21,3 +21,7 @@ for file in ~/.{exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
+
+# Need to clone: git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL ]]

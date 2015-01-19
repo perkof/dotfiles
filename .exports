@@ -34,14 +34,12 @@ export DOCKER_HOST="tcp://docker.host:4243"
 # AWS CLI tools variables
 #export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
 #export EC2_CERT="$(/bin/ls "$HOME"/.ec2/cert-*.pem | /usr/bin/head -1)"
-#export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.6.12.0/libexec"
+#export EC2_HOME="$(brew --prefix ec2-api-tools)/libexec"
 #export EC2_URL="https://ec2.ap-southeast-2.amazonaws.com"
 
 # Golang variables
 export GOPATH="$HOME/Development/home/go"
 export GOROOT="$(brew --prefix go)/libexec"
-
-export FOO=ashlin
 
 # Idempotent path variable with Homebrew and Go executables preceding the rest 
 export PATH="/usr/local/bin:$(brew --prefix coreutils)/libexec/gnubin:$GOROOT/bin:$GOPATH/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/X11/bin:$HOME/bin:/usr/share/terraform"

@@ -8,6 +8,7 @@ alias .....="cd ../../../.."
 alias dev="cd ~/Development"
 alias devh="cd ~/Development/home"
 alias devw="cd ~/Development/work"
+alias devmm="cd ~/Development/work/mm"
 alias devg="cd $GOPATH/src/github.com/ashlineldridge"
 alias g="git"
 alias h="history"
@@ -90,7 +91,6 @@ alias reload="exec $SHELL -l"
 # Sublime 2
 alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 
-<<<<<<< Updated upstream
 # Alias to launch ldapvi pointed at CO LDAPs
 alias ldapvi_co_aws='EDITOR=vim ldapvi --discover --host ldap://10.72.2.182:6070 --user cn=manager,dc=puppet,dc=com --password coldappassword'
 alias ldapvi_co_staging='EDITOR=vim ldapvi --discover --host ldap://localhost:16070 --user cn=manager,dc=puppet,dc=com --password coldappassword'
