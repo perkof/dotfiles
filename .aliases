@@ -88,17 +88,5 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
 
-# Sublime 2
-alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
-
-# Alias to launch ldapvi pointed at CO LDAPs
-alias ldapvi_co_aws='EDITOR=vim ldapvi --discover --host ldap://10.72.2.182:6070 --user cn=manager,dc=puppet,dc=com --password coldappassword'
-alias ldapvi_co_staging='EDITOR=vim ldapvi --discover --host ldap://localhost:16070 --user cn=manager,dc=puppet,dc=com --password coldappassword'
-alias ldapvi_co_dev='EDITOR=vim ldapvi --discover --host ldap://localhost:26070 --user cn=manager,dc=puppet,dc=com --password coldappassword'
-alias ldapvi_co_staging_dev1b="ldapvi_co_staging '(cn=melcclstk02*)'"
-
-# Use MacVim's vim binary (already done?)
-#alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
-
 # Terraform
 alias tf="terraform"
