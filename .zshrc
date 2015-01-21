@@ -22,8 +22,8 @@ for file in ~/.{exports,aliases,functions,extra}; do
 done;
 unset file;
 
-# Load AWS-CLI completion logic
-source ~/bin/aws_zsh_completer.sh
+# Enable aws-cli completion
+source /usr/local/share/zsh/site-functions/_aws
 
 # Need to clone: git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
