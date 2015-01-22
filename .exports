@@ -28,8 +28,8 @@ export GRADLE_HOME="$(brew --prefix gradle)/libexec"
 # Dot files repository home directory
 export DOTFILES_HOME="$HOME/Development/home/dotfiles"
 
-# Docker remote host (docker.host needs to defined in /etc/hosts)
-export DOCKER_HOST="tcp://docker.host:4243"
+# Docker remote host
+export DOCKER_HOST="tcp://127.0.0.1:4243"
 
 # AWS CLI tools variables
 #export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
