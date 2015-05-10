@@ -12,3 +12,6 @@ Thumbs.db
 
 # Make sure we don't commit .extra since it's intent is as a private / unshared file
 .extra
+
+# Vim temp files
+*.swp
