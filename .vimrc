@@ -22,9 +22,9 @@ Plugin 'chase/vim-ansible-yaml'
 call vundle#end()
 filetype plugin indent on 
 
-" Set up the Base16 Twilight Dark theme
+" Set up the Base16 Tomorrow Dark theme
 let base16colorspace=256
-colorscheme base16-twilight
+colorscheme base16-tomorrow
 set background=dark
 
 " Other codey settings

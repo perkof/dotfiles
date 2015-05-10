@@ -26,7 +26,7 @@ unset file;
 source /usr/local/share/zsh/site-functions/_aws
 
 # Base16 shell script for configuring colors
-source ~/bin/base16-twilight.dark.sh
+source ~/bin/base16-tomorrow.dark.sh
 
 # Don't share history between iTerm2 panes
 unsetopt inc_append_history
