@@ -1,34 +1,35 @@
-# Install command-line tools using Homebrew
-# Usage: `brew bundle Brewfile`
-
 # Make sure we’re using the latest Homebrew
-update
+brew update
 
 # Upgrade any already-installed formulae
-upgrade
+brew upgrade --all
 
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-install coreutils
+brew install coreutils
 # Install some other useful utilities like `sponge`
-install moreutils
+brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
-install findutils
+brew install findutils
 
 # Install wget with IRI support
-install wget --with-iri
+brew install wget --with-iri
 
 # Install MacVim with LUA support
-install macvim --with-cscope --with-lua --override-system-vim
+brew install macvim --with-cscope --with-lua --override-system-vim
 
 # Install other useful binaries
-install git
-install tree
-install jq
+brew install git
+brew install tree
+brew install jq
 
 # Install development languages and tooling
-install gradle
-install groovy
+brew install gradle
+brew install groovy
+brew install maven
+brew install rabbitmq
+brew install redis
+brew install dynamodb-local
 
 # Remove outdated versions from the cellar
-cleanup
+brew cleanup
