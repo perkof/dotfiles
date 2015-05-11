@@ -31,5 +31,12 @@ brew install rabbitmq
 brew install redis
 brew install dynamodb-local
 
+# Install Homebrew Cask
+brew install caskroom/cask/brew-cask
+
+# Install cloud tools
+brew install awscli
+brew cask install google-cloud-sdk
+
 # Remove outdated versions from the cellar
 brew cleanup

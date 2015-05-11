@@ -8,6 +8,9 @@ function capture_dots() {
 	for file in ~/.{aliases,curlrc,editorconfig,exports,functions,gitconfig,screenrc,vimrc,zshrc}; do
 		[ -r "$file" ] && [ -f "$file" ] && cp "$file" $DOTFILES_HOME;
 	done;
+	for file in ~/bin/*; do
+		[ -r "$file" ] && [ -f "$file" ] && cp "$file" $DOTFILES_HOME/bin;
+	done;
 }
 
 # Simple calculator

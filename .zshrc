@@ -28,8 +28,9 @@ source /usr/local/share/zsh/site-functions/_aws
 # Base16 shell script for configuring colors
 source ~/bin/base16-twilight.dark.sh
 
-# The next line updates PATH for the Google Cloud SDK.
-source '/Users/ashlin/Development/Tools/google-cloud-sdk/path.bash.inc'
+# Don't share history between iTerm2 panes
+unsetopt inc_append_history
+unsetopt share_history
 
-# The next line enables bash completion for gcloud.
-source '/Users/ashlin/Development/Tools/google-cloud-sdk/completion.bash.inc'
+# Enable command line completion for Google Cloud CLI
+source "${GCLOUD_HOME}/completion.zsh.inc"
