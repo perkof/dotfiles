@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="sorin"
 
 # Uncomment the following line to change how often to auto-update (in days).
-export UPDATE_ZSH_DAYS=1
+export UPDATE_ZSH_DAYS=7
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 plugins=(brew brew-cask cp docker git github gitignore golang gradle history lein osx sudo)
@@ -25,6 +25,11 @@ unset file;
 # Enable aws-cli completion
 source /usr/local/share/zsh/site-functions/_aws
 
-# Need to clone: git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
-BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL ]]
+# Base16 shell script for configuring colors
+source ~/bin/base16-twilight.dark.sh
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/ashlin/Development/Tools/google-cloud-sdk/path.bash.inc'
+
+# The next line enables bash completion for gcloud.
+source '/Users/ashlin/Development/Tools/google-cloud-sdk/completion.bash.inc'

@@ -10,7 +10,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'fatih/vim-go'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'chriskempson/base16-vim'
 Plugin 'tfnico/vim-gradle'
 Plugin 'bling/vim-airline'
@@ -23,9 +22,9 @@ Plugin 'chase/vim-ansible-yaml'
 call vundle#end()
 filetype plugin indent on 
 
-" Set up the Base16 Tomorrow Dark theme
+" Set up the Base16 Twilight Dark theme
 let base16colorspace=256
-colorscheme base16-tomorrow
+colorscheme base16-twilight
 set background=dark
 
 " Other codey settings
@@ -36,8 +35,6 @@ set ts=4
 " Search settings
 set incsearch hlsearch
 
-" Map F5 to switch between Solarized light and dark modes
-call togglebg#map("<F5>")
 " Map F6 to toggle Tagbar
 nmap <F8> :TagbarToggle<cr>
 
