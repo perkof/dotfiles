@@ -90,3 +90,9 @@ alias reload="exec $SHELL -l"
 
 # Terraform
 alias tf="terraform"
+
+# Docker Machine / Boot2Docker
+alias boot2docker-init='eval $(docker-machine env default)'
+
+# AWS auth alias to export AWS key variables
+alias awsauth-home=". ~/.aws/home.credentials.sh"
