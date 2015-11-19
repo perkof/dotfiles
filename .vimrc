@@ -18,6 +18,9 @@ Plugin 'ervandew/supertab'
 Plugin 'Townk/vim-autoclose'
 Plugin 'maxbrunsfeld/vim-yankstack'
 Plugin 'chase/vim-ansible-yaml'
+Plugin 'rust-lang/rust.vim'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'markcornick/vim-terraform'
 
 call vundle#end()
 filetype plugin indent on 
