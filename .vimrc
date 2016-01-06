@@ -21,9 +21,12 @@ Plugin 'chase/vim-ansible-yaml'
 Plugin 'rust-lang/rust.vim'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'markcornick/vim-terraform'
+Plugin 'maksimr/vim-jsbeautify'
+Plugin 'einars/js-beautify'
+Plugin 'editorconfig/editorconfig-vim'
 
 call vundle#end()
-filetype plugin indent on 
+filetype plugin indent on
 
 " Set up the Base16 Tomorrow Dark theme
 let base16colorspace=256
@@ -100,12 +103,10 @@ let g:tagbar_type_go = {
     \ 'ctagsargs' : '-sort -silent'
     \ }
 
-" Todo:
+" JSON Beautification
+autocmd FileType json noremap <buffer> <leader>j :call JsonBeautify()<cr>
+autocmd FileType json vnoremap <buffer>  <leader>j :call RangeJsBeautify()<cr>
+
+" TODO:
 " Set up buffer key mappings: http://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/
 " Configure Airline status / tabline: https://github.com/bling/vim-airline
-"
-
-
-"
-" Useful leader key mappings
-" map <leader>n :new<cr>
