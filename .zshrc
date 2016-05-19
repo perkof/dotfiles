@@ -34,3 +34,8 @@ unsetopt share_history
 
 # Enable command line completion for Google Cloud CLI
 source "${GCLOUD_HOME}/completion.zsh.inc"
+
+# Shortcuts
+bindkey "^[^[[D" backward-word
+bindkey "^[^[[C" forward-word
+bindkey \^U backward-kill-line
