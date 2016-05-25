@@ -26,6 +26,7 @@ brew install jq
 # Install development languages and tooling
 # Install Homebrew Cask
 brew install caskroom/cask/brew-cask
+brew install sbt
 
 # Install cloud tools
 brew install awscli
