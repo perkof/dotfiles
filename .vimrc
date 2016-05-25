@@ -9,10 +9,11 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'chriskempson/base16-vim'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Townk/vim-autoclose'
 
-" Plugin 'derekwyatt/vim-scala'
+Plugin 'derekwyatt/vim-scala'
 " Plugin 'maksimr/vim-jsbeautify'
 " Plugin 'einars/js-beautify'
 
@@ -46,7 +47,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 let NERDTreeShowHidden=1
 
 set laststatus=2
-
+let g:airline_powerline_fonts = 1 
+let g:airline_theme='base16'
 " TODO:
 " Set up buffer key mappings: http://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/
 " Configure Airline status / tabline: https://github.com/bling/vim-airline
