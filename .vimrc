@@ -43,7 +43,9 @@ map <C-n> :NERDTreeToggle<cr>
 map <leader>nf :NERDTreeFind<cr>
 " Allow quit command to exit Vim if the NERDTree window is the last open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-"let NERDTreeShowHidden=1
+let NERDTreeShowHidden=1
+
+set laststatus=2
 
 " TODO:
 " Set up buffer key mappings: http://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/
