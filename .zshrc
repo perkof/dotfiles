@@ -8,7 +8,7 @@ ZSH_THEME="sorin"
 export UPDATE_ZSH_DAYS=7
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(brew brew-cask cp docker git github gitignore golang gradle history lein osx sudo)
+plugins=(brew brew-cask cp docker git github gitignore golang history osx sudo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -22,18 +22,12 @@ for file in ~/.{exports,aliases,functions,extra}; do
 done;
 unset file;
 
-# Enable aws-cli completion
-source /usr/local/share/zsh/site-functions/_aws
-
 # Base16 shell script for configuring colors
 source ~/bin/base16-tomorrow.dark.sh
 
 # Don't share history between iTerm2 panes
 unsetopt inc_append_history
 unsetopt share_history
-
-# Enable command line completion for Google Cloud CLI
-source "${GCLOUD_HOME}/completion.zsh.inc"
 
 # Shortcuts
 bindkey "^[^[[D" backward-word

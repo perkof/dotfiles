@@ -147,8 +147,8 @@
 
 	insteadOf = "gist:"
 [user]
-	name = Ashlin Eldridge
-	email = aeldridge@seek.com.au
+	name = Fraser Perkins
+	email = github@codeme.com.au
 [credential]
 	helper = osxkeychain
 [pull]
