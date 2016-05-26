@@ -12,7 +12,7 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Townk/vim-autoclose'
-
+Plugin 'wincent/command-t'
 Plugin 'derekwyatt/vim-scala'
 " Plugin 'maksimr/vim-jsbeautify'
 " Plugin 'einars/js-beautify'
