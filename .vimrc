@@ -52,6 +52,9 @@ let g:airline_theme='base16'
 set guifont=Inconsolata\ for\ Powerline
 let g:airline_left_sep=''
 let g:airline_right_sep=''
+let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#enabled = 1
+
 " TODO:
 " Set up buffer key mappings: http://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/
 " Configure Airline status / tabline: https://github.com/bling/vim-airline
