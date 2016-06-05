@@ -13,9 +13,11 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Townk/vim-autoclose'
 Plugin 'wincent/command-t'
-Plugin 'derekwyatt/vim-scala'
 " Plugin 'maksimr/vim-jsbeautify'
 " Plugin 'einars/js-beautify'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'ervandew/supertab'
+Plugin 'derekwyatt/vim-scala'
 
 call vundle#end()
 filetype plugin indent on
@@ -54,6 +56,8 @@ let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
 
 " TODO:
 " Set up buffer key mappings: http://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/
