@@ -22,11 +22,13 @@ brew install macvim --with-cscope --with-lua --override-system-vim
 brew install git
 brew install tree
 brew install jq
+brew install htop 
+brew install cmake
 
 # Install development languages and tooling
 # Install Homebrew Cask
-brew install caskroom/cask/brew-cask
 brew install sbt
+brew install python 
 
 # Install cloud tools
 brew install awscli
