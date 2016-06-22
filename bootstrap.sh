@@ -4,11 +4,19 @@ cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;
 
-function doIt() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --include "bin/*.sh" --exclude "*.sh" \
-		--exclude iterm2 --exclude "README.md" --exclude ".gitignore" \
-		-avh --no-perms . ~;
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+function symlink() {
+	normalized=$(echo $1 | sed 's/^.\///')
+	ln -s -f $DIR/$normalized ~/$normalized
 }
+
+function doIt() {
+	find . -type f -maxdepth 1 -name ".*" \( -not -iname ".DS_Store" -and -not -iname "*.swp" \) | while read file; do symlink "$file"; done
+	cp -rf bin ~/
+	touch ~/.extra
+}
+
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doIt;
@@ -17,6 +25,7 @@ else
 	echo "";
 	if [[ $REPLY =~ ^[Yy]$ ]]; then
 		doIt;
+		echo "Symlinks configured. Add machine specific functions to ~/.extra"
 	fi;
 fi;
 unset doIt;
