@@ -18,7 +18,6 @@ Plugin 'wincent/command-t'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ervandew/supertab'
 Plugin 'derekwyatt/vim-scala'
-Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 filetype plugin indent on

@@ -29,6 +29,7 @@ brew install cmake
 
 # Install development languages and tooling
 # Install Homebrew Cask
+brew install Caskroom/cask/java
 brew install sbt
 brew install python 
 
