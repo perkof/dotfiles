@@ -31,7 +31,7 @@ set background=dark
 syntax on
 set number
 set ts=4
-
+set noswapfile
 " Search settings
 set incsearch hlsearch
 
