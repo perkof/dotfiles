@@ -21,9 +21,6 @@ export GREP_OPTIONS="--color=auto";
 # Dot files repository home directory
 export DOTFILES_HOME="$HOME/Projects/dotfiles"
 
-# Docker remote host
-export DOCKER_HOST="tcp://127.0.0.1:4243"
-
 # Path
 export PATH="/usr/local/bin:$(brew --prefix coreutils)/libexec/gnubin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/X11/bin:${HOME}/bin"
 # orig path=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
