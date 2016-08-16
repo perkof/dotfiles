@@ -64,6 +64,8 @@ set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use"
 
+set clipboard=unnamed
+
 " TODO:
 " Set up buffer key mappings: http://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/
 " Configure Airline status / tabline: https://github.com/bling/vim-airline
